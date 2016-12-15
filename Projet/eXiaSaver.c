@@ -167,7 +167,6 @@ int main(int argc, char *argv[]){
 	declarationVE();
 	int randpbm = 0;
 	int randTerm = choix(2); //appel de la fonction choisissant quel terminal sera exécuté
-	printf("TermSaver: %d\n", randTerm); // A SUPPRIMER
 	int choice=0;
 	int typeEcrit;
 	int parametreEcrit;
