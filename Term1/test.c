@@ -7,7 +7,7 @@
 #define TAILLE_MAX 1000     //Taille maximum du fichier
 #define LARGEUR_CONSOLE 80
 #include <string.h>
-#include <ncurses.h>
+#include <ncurses.h> 
 
 int module()
     {
