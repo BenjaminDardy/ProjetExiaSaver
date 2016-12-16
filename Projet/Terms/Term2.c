@@ -121,7 +121,7 @@ int affichageHorloge()
 int main()
 {
 
-	int RefreshT = atoi(getenv(EXIASAVER2_SLEEP);
+	int RefreshT = atoi(getenv("EXIASAVER2_SLEEP");
 	int ctrlc = 0;
 	int i;
 	int a = 20,b = 15,c = 3,d = 25;
