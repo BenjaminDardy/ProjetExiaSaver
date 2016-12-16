@@ -29,14 +29,14 @@ int module()
         if (fichier1 != NULL) //On peut lire le fichier
             {
 
-                fseek(fichier1, 3, SEEK_SET);
+                fseek(fichier1, 3, SEEK_SET); //Positionne le curseur où la longueur et largeur sont stockées
                 fscanf(fichier1, "%d %d", &chaine2[0], &chaine2[1]); //Lecture de la ligne où sont stocké la largeur et longueur de l'image
                 a = chaine2[0];
-                b = chaine2[1];
-		c = (80-2*a)/2;
-		d = (24-b)/2;
-                a = (a*2)-1;
-		fseek(fichier1, 9, SEEK_SET);
+                b = chaine2[1]; 
+		c = (80-2*a)/2; //Variable permettant de centrer en largeur l'image
+		d = (24-b)/2; //Variable permetant de centrer en hauteur l'image
+                a = (a*2)-1; 
+		fseek(fichier1, 9, SEEK_SET); //Positionne le curseur au début des lignes de 0 et 1
 
 	for(l=0;l<d;l++)
 	{
