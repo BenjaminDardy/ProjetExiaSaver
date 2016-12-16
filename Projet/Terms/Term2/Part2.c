@@ -42,43 +42,43 @@ int affichageHorloge()
 	    	char chaine[TAILLE_MAX];
 	    	int chaine2[2];
 	    	int a,b;
-
+		chdir(getenv("EXIASAVER2_PBM"));
 	for (z=0; z<8; z++)
 	{
 		switch(Time[z])
 		{
 			case 0:
-				fichier = fopen("/home/benjamin/Projet/Terms/Term2/0.pbm", "r");
+				fichier = fopen("0.pbm", "r");
 				break;
 			case 1:
-				fichier = fopen("/home/benjamin/Projet/Terms/Term2/1.pbm", "r");
+				fichier = fopen("1.pbm", "r");
 				break;
 			case 2:
-				fichier = fopen("/home/benjamin/Projet/Terms/Term2/2.pbm", "r");
+				fichier = fopen("2.pbm", "r");
 				break;
 			case 3:
-				fichier = fopen("/home/benjamin/Projet/Terms/Term2/3.pbm", "r");
+				fichier = fopen("3.pbm", "r");
 				break;
 			case 4:
-				fichier = fopen("/home/benjamin/Projet/Terms/Term2/4.pbm", "r");
+				fichier = fopen("4.pbm", "r");
 				break;
 			case 5:
-				fichier = fopen("/home/benjamin/Projet/Terms/Term2/5.pbm", "r");
+				fichier = fopen("5.pbm", "r");
 				break;	
 			case 6:
-				fichier = fopen("/home/benjamin/Projet/Terms/Term2/6.pbm", "r");
+				fichier = fopen("6.pbm", "r");
 				break;
 			case 7:
-				fichier = fopen("/home/benjamin/Projet/Terms/Term2/7.pbm", "r");
+				fichier = fopen("7.pbm", "r");
 				break;
 			case 8:
-				fichier = fopen("/home/benjamin/Projet/Terms/Term2/8.pbm", "r");
+				fichier = fopen("8.pbm", "r");
 				break;
 			case 9:
-				fichier = fopen("/home/benjamin/Projet/Terms/Term2/9.pbm", "r");
+				fichier = fopen("9.pbm", "r");
 				break;
 			case 10:
-				fichier = fopen("/home/benjamin/Projet/Terms/Term2/:.pbm", "r");
+				fichier = fopen(":.pbm", "r");
 				break;
 		}
 		
