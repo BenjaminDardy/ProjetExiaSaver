@@ -157,8 +157,8 @@ void compteur(Input input[], int choice) {
 
 void declarationVE(){
 
-  setenv("EXIASAVER_HOME","/home/max/Documents/Projet/Terms", 0);
-  setenv("EXIASAVER1_PBM","/home/max/Documents/Projet/Terms/Term1", 0);
+  setenv("EXIASAVER_HOME","/home/benjamin/Projet/Terms", 0);
+  setenv("EXIASAVER1_PBM","/home/benjamin/Projet/Terms/Term1", 0);
   setenv("EXIASAVER2_SLEEP","10", 0);
   setenv("EXIASAVER2_PBM","/home/benjamin/Projet/Terms/Term2", 0);
 }
