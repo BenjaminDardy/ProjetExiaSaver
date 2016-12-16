@@ -12,7 +12,6 @@
 
 int module()
     {
-        //system("clear");      //Fonction qui nettoie la console
         FILE* fichier1 = NULL;      //Pointeur initialisé à NULL
         char chaine[TAILLE_MAX];
         int chaine2[2];
@@ -25,9 +24,7 @@ int module()
 
 
 	chdir(getenv("EXIASAVER1_PBM"));
-  //*p = getenv("MONPBM");
-	fichier1 = fopen(getenv("MONPBM"), "r");
- //Ouverture du fichier "château.pbm" en lecture simple Le pointeur fichier devient le pointeur sur"château.pbm"
+	fichier1 = fopen(getenv("MONPBM"), "r"); //Ouvre le fichier pbm choisi par le lanceur
 
         if (fichier1 != NULL) //On peut lire le fichier
             {
@@ -76,8 +73,6 @@ int module()
         return 0;
     }
 
-int global; /* In BSS segement, will automatically be assigned '0'*/
-
 int main()
 {
     system("clear");
@@ -95,7 +90,6 @@ int main()
 
 
 	module();
-//printf_center();
 	if(status!=0)
 {
 	exit(2);
@@ -103,17 +97,8 @@ int main()
          }
          else /* parent process */
          {
-             /*printf("parent process!\n");
-             printf("parent PID =  %d, child pid = %d\n", getpid(), child_pid);*/
-             wait(&status); // wait for child to exit, and store child's exit status
-             //printf("Child exit code: %d\n", WEXITSTATUS(status));
-             /*//The change in local and global variable in child process should not reflect here in parent process.
-             printf("\n Parent'z local = %d, parent's  global = %d\n",local,global);
-             printf("Parent says bye!\n");
-             exit(0);  // parent exits */
-
-
-         }
+             wait(&status); // attend que le fils ai fini et stocke la valeur de sortie du fils
+	 }
     }
     else /* failure */
     {
