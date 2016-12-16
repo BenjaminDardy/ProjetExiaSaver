@@ -159,6 +159,7 @@ void declarationVE(){
  putenv("EXIASAVER_HOME=/home/benjamin/Projet/Terms");
  putenv("EXIASAVER1_PBM=/home/benjamin/Projet/Terms/Term1");
  putenv("EXIASAVER2_SLEEP=10");
+ putenv("EXIASAVER2_PBM=/home/benjamin/Projet/Terms/Term2");
 }
 
 int main(int argc, char *argv[]){
