@@ -30,7 +30,7 @@ int module()
             {
 
                 fseek(fichier1, 3, SEEK_SET);
-                fscanf(fichier1, "%d %d", &chaine2[0], &chaine2[1]);
+                fscanf(fichier1, "%d %d", &chaine2[0], &chaine2[1]); //Lecture de la ligne où sont stocké la largeur et longueur de l'image
                 a = chaine2[0];
                 b = chaine2[1];
 		c = (80-2*a)/2;
